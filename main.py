@@ -65,7 +65,7 @@ def evt_value_at_risk(returns, confidence_level):
     """
     Compute the Value-at-Risk using Extreme Value Theory at a given confidence level.
     :param returns: DataFrame or Series of returns
-    :param confidence_level: float (e.g., 0.95 for 95% confidence)
+    :param confidence_level: float (e.g., 0.99 for 99% confidence)
     :return: float
     """
     # Fit the GEV distribution to the negative returns
