@@ -130,7 +130,7 @@ def process_ticker(ticker, training_start, testing_end_date):
         es = expected_shortfall(es_training_data, 0.025)
 
         # Compute EVT-Based VaR
-        confidence_level = 0.95
+        confidence_level = 0.99
         var_evt = evt_value_at_risk(evt_training_data, confidence_level )
 
         date = daily_returns.index[-day]
